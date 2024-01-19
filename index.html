@@ -2,82 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBC DIGITAL APPS BUSINESS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Share Button</title>
     <style>
-        body {
-            font-family: Lato;
-            margin: 0;
-            overflow-y: scroll; /* Enable vertical scrolling */
-        }
-
-        h2 {
-            color: red;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        p {
-            text-align: justify;
-            margin: 20px;
-        }
-
-        table {
-            width: auto;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            color: darkgreen;
-        }
-
-        .earnings {
-            color: red;
-        }
-
-        #letterContainer {
-            text-align: center;
-            color: black;
-            margin: 20px;
-        }
-
-        #imageContainer {
-            margin-top: 20px;
-        }
-
-        #imageDisplay {
-            width: 3.5cm;
-            height: 2.5cm;
-        }
-
-        #commentDisplay {
-            font-size: 10px;
-            background-color: white; /* Add white background to comments */
-            padding: 5px; /* Add padding for better visibility */
-        }
-
-        #getStartedSection {
-            text-align: center;
-            margin: 20px;
-        }
-
-        #getStartedButton {
-            background-color: red;
-            color: white;
-            padding: 15px 30px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-        }
-
         #progress-bar-container {
             position: relative;
             text-align: left;
@@ -122,6 +49,7 @@
             text-align: left;
         }
 
+        /* Styling for the WhatsApp button */
         #whatsapp-button {
             background-color: #e74c3c; /* Red color */
             color: #fff; /* White text color */
@@ -141,57 +69,27 @@
             font-weight: bold;
             color: #e74c3c; /* Red color */
         }
+
+        h2 {
+            color: red;
+            text-align: center;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
-    <h2 style="color: red;">Get started Right Now!</h2>
 
-    <p>
-        <span lang="en-US" style="font-size: 12pt; font-weight: bold;">
-            Welcome to CBC DIGITAL APPS BUSINESS. You will earn Ksh.100 per each CBC DIGITAL APPLICATION installation and activation.
-        </span>
-    </p>
+    <h2>Get Started Right Now!</h2>
 
-    <!-- Earnings Table -->
-    <table id="earnings-table">
-        <tr>
-            <th>Name of Activator</th>
-            <th>No. of App Installations</th>
-            <th>Earnings Per Month</th>
-        </tr>
-    </table>
-
-    <!-- Alphabet Learning Section -->
-    <div id="letterContainer">
-        <div id="imageContainer">
-            <img id="imageDisplay" alt="Image for the letter meaning">
-        </div>
-        <p id="commentDisplay"></p>
-    </div>
-
-    <p style="text-align: justify;">
-        <span lang="en-US" style="font-size: 12pt; font-weight: bold;">
-            Scores of Kenyans are making great income by installing and activating CBC DIGITAL APP to clients countywide,
-            and we are still open to bringing on board more app installers and activators. All you are required to have is a smartphone with good internet access.
-        </span>
-    </p>
-
-    <!-- Get Started Section -->
-    <div id="getStartedSection">
-        <h2>Get trained for 10-15 minutes and START WORKING NOW!</h2>
-        <button id="getStartedButton" onclick="redirectToWhatsApp()">CLICK HERE TO GET STARTED!</button>
-    </div>
-
-    <!-- Share Button Section -->
     <div id="progress-bar-container">
         <button id="whatsapp-button" onclick="shareOnWhatsApp()">Share on WhatsApp</button>
-
+        
         <!-- Progress Bar with value -->
         <div id="progress-bar-wrapper">
             <div id="progress-growth"></div>
             <div id="progress-text">0%</div>
         </div>
-
+        
         <!-- Remaining Shares and Earnings -->
         <div id="table-container">
             <table>
@@ -244,11 +142,7 @@
                 window.location.href = `whatsapp://send?text=${message}`;
             }
         }
-
-        function redirectToWhatsApp() {
-            window.location.href = 'https://api.whatsapp.com/message/PJQYFAE7QKFYF1';
-        }
     </script>
+
 </body>
 </html>
-
